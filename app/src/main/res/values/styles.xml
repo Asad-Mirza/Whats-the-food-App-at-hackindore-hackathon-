@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/materialBackground</item>
+        <item name="android:textColor">@color/materialTextColorPrimary</item>
+        <item name="android:textColorPrimary">@color/materialTextColorPrimary</item>
+        <item name="android:textColorSecondary">@color/materialTextColorPrimary</item>
+        <item name="android:textColorHint">@color/materialTextColorHint</item>
+        <item name="android:divider">@color/materialDividerColor</item>
+        <item name="android:actionMenuTextAppearance">@color/materialTextColorPrimary</item>
+        <item name="android:actionMenuTextColor">@color/materialTextColorPrimary</item>
+        <item name="android:windowContentTransitions">true</item>
+
+
+    </style>
+
+</resources>

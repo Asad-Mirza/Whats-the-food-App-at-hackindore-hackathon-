@@ -1,0 +1,366 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+
+            android:src="@drawable/logo2" />
+
+        <RelativeLayout
+            android:id="@+id/cardview1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appBarLayout"
+            android:layout_margin="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/materialBackground"
+            android:paddingLeft="8dp"
+            android:paddingTop="12dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Today's Menu"
+                    android:textColor="@color/materialTextColorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/breakcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/head">
+
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/icon1" />
+                    >
+
+                    <TextView
+                        android:id="@+id/breakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/icon1"
+                        android:padding="6dp"
+                        android:text="Break Fast"
+                        android:textColor="@color/materialTextColorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/breakfastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/breakfast"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="60dp"
+                        android:text="Tea and Biscuit"
+                        android:textColor="@color/materialTextColorSecondary"
+                        android:textSize="14dp"
+
+                        />
+
+                    <Switch
+                        android:id="@+id/breakS"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/breakfast"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/breakfastName"
+                        android:checked="true" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lunchcard"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/breakcard">
+
+                    <ImageView
+                        android:id="@+id/icon3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/icon3" />
+                    >
+
+                    <TextView
+                        android:id="@+id/lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon3"
+                        android:padding="6dp"
+                        android:text="Lunch"
+                        android:textColor="@color/materialTextColorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/lunchName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lunch"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="60dp"
+                        android:text="Tea and Biscuit"
+                        android:textColor="@color/materialTextColorSecondary"
+                        android:textSize="14dp"
+
+                        />
+
+                    <Switch
+                        android:id="@+id/lunchS"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/lunch"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/lunchName"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dinnercard"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lunchcard">
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+
+                        android:src="@drawable/icon2" />
+                    >
+
+                    <TextView
+                        android:id="@+id/dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/icon2"
+                        android:padding="6dp"
+                        android:text="Dinner"
+                        android:textColor="@color/materialTextColorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/dinnerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dinner"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="60dp"
+                        android:text="Tea and Biscuit"
+                        android:textSize="14dp"
+
+                        />
+
+                    <Switch
+                        android:id="@+id/dinnerS"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/dinner"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/dinnerName"
+                        android:checked="true"
+                        android:textColor="@color/materialTextColorSecondary"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/cardview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview1"
+
+            android:layout_margin="4dp"
+            android:padding="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/materialBackground"
+                android:paddingLeft="8dp"
+                android:paddingTop="12dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="22dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/head2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Feedback"
+                        android:textColor="@color/materialTextColorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/breakcard2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/head2">
+
+                        <ImageView
+                            android:id="@+id/icon12"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/icon1" />
+                        >
+
+                        <TextView
+                            android:id="@+id/breakfast2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/icon12"
+                            android:padding="8dp"
+                            android:text="Break Fast"
+                            android:textSize="16dp" />
+
+                        <RatingBar
+                            android:id="@+id/breakRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/breakfast2"
+                            android:layout_centerHorizontal="true"
+                            android:padding="25dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/lunchcard2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/breakcard2">
+
+                        <ImageView
+                            android:id="@+id/icon32"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/icon3" />
+                        >
+
+                        <TextView
+                            android:id="@+id/lunch2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/icon32"
+                            android:padding="8dp"
+                            android:text="Lunch"
+                            android:textSize="16dp" />
+
+                        <RatingBar
+                            android:id="@+id/lunchRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lunch2"
+                            android:layout_centerHorizontal="true"
+                            android:padding="25dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dinnercard2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lunchcard2">
+
+                        <ImageView
+                            android:id="@+id/icon22"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/icon2" />
+                        >
+
+                        <TextView
+                            android:id="@+id/dinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/icon22"
+                            android:padding="8dp"
+                            android:text="Dinner"
+                            android:textSize="16dp" />
+
+                        <RatingBar
+                            android:id="@+id/dinnerRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dinner2"
+                            android:layout_centerHorizontal="true"
+                            android:padding="25dp" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview2"
+            android:layout_margin="8dp"
+
+            android:background="@color/materialBackground"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Notice from Mess Admin >"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

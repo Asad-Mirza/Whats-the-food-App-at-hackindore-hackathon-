@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+
+            android:src="@drawable/logo2" />
+
+        <RelativeLayout
+            android:id="@+id/cardview1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appBarLayout"
+            android:layout_margin="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/materialBackground"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/todaymenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Today's Menu "
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cardview3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview1"
+            android:layout_margin="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/materialBackground"
+            android:padding="8dp">
+
+            <TextView
+
+                android:id="@+id/h1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="15dp"
+                android:text="Analytics of Today's Food"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/pi1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/h1"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pi1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cardview4"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview3"
+            android:layout_margin="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/materialBackground"
+            android:padding="8dp">
+
+            <TextView
+
+                android:id="@+id/h12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="15dp"
+                android:text="Feedback of Today's Food"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/pi2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/h12"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/stars" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cardview2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview4"
+            android:layout_margin="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/materialBackground"
+            android:padding="8dp">
+
+            <TextView
+
+                android:id="@+id/sendNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="15dp"
+                android:text="Send Notice"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
